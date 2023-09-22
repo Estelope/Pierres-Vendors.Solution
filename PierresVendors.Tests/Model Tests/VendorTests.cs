@@ -21,5 +21,13 @@ namespace PierresVendors.Tests
             string result = newVendor.Name;
             Assert.AreEqual(name, result);
         }
+        [TestMethod]
+        public void GetDescription_ReturnsVendorDescription_String()
+        {
+            string description = "Vendor Description";
+            Vendor newVendor = new Vendor("Test Vendor", description);
+            string result = newVendor.Description;
+            Assert.AreEqual(description, result);
+        }
     }
 }
