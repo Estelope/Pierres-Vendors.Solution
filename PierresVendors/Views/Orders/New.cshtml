@@ -13,8 +13,8 @@
   </head>
   <body>
     <form action="/vendors/@Model.Id/orders" method="post">
-      <label for="description">Add a new detail or note to @Model.Name</label>
-      <input id="carDescription" name="carDescription" type="text">
+      <label for="orderDescription">Add a new detail or note to @Model.Name</label>
+      <input id="orderDescription" name="orderDescription" type="text">
 
       <label for="orderDate">Date:</label>
     <input id="orderDate" name="orderDate" type="date">
@@ -23,5 +23,8 @@
     <input id="orderPrice" name="orderPrice" type="string" step="0.01" placeholder="0.00">
       <button type="submit">Submit</button>
     </form>
+
+      <p><a href="/">Back home</a></p>
+    <p><a href="/vendors">Back to Vendors List.</a></p>
   </body>
 </html>
