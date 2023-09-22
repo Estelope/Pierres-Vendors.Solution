@@ -49,7 +49,7 @@ namespace PierresVendors.Controllers
       List<Order> vendorOrders = foundVendor.Orders;
       model.Add("orders", vendorOrders);
       model.Add("vendors", foundVendor);
-      return View("Show", model);
+      return RedirectToAction("Show", new { id = vendorId });
     }
   }
 }
