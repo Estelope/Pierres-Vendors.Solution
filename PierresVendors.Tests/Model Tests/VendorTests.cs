@@ -29,5 +29,14 @@ namespace PierresVendors.Tests
             string result = newVendor.Description;
             Assert.AreEqual(description, result);
         }
+        
+        [TestMethod]
+        public void GetId_ReturnsVendorId_Int()
+        {
+            Vendor.ClearAll();
+            Vendor newVendor = new Vendor("Test Vendor", "Vendor Description");
+            int result = newVendor.Id;
+            Assert.AreEqual(1, result);
+        }
     }
 }
