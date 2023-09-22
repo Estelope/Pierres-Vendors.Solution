@@ -38,5 +38,17 @@ namespace PierresVendors.Tests
             int result = newVendor.Id;
             Assert.AreEqual(1, result);
         }
+
+        [TestMethod]
+        public void GetAll_ReturnsAllVendorObjects_VendorList()
+        {
+            Vendor.ClearAll();
+            Vendor newVendor1 = new Vendor("Vendor 1", "Description 1");
+            Vendor newVendor2 = new Vendor("Vendor 2", "Description 2");
+            List<Vendor> expectedList = new List<Vendor> { newVendor1, newVendor2 };
+
+            List<Vendor> result = Vendor.GetAll();
+            CollectionAssert.AreEqual(expectedList, result);
+        }
     }
 }
