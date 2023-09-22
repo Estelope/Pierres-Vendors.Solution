@@ -61,6 +61,16 @@ namespace PierresVendors.Tests
             Assert.AreEqual(newVendor2, result);
         }
 
+        [TestMethod]
+        public void AddOrder_AssociatesOrderWithVendor_OrderList()
+        {
+            Vendor.ClearAll();
+            Vendor newVendor = new Vendor("Test Vendor", "Vendor Description");
+            Order newOrder = new Order("Order Description", "Order Price", "Order Date");
 
+            newVendor.AddOrder(newOrder);
+            List<Order> result = newVendor.Orders;
+            CollectionAssert.AreEqual(new List<Order> { newOrder }, result);
+        }
     }
 }
