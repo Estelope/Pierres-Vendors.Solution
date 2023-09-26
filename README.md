@@ -16,10 +16,10 @@ The application utilizes the .NET Core MVC framework to create a system for moni
 ### Setup Instructions
 
 1. Clone this repo.
-2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "Pierres Vendors.Solution".
+2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "PierresVendors" inside of "Pierres Vendors.Solution".
 3. In the command line, run the command "dotnet run" to compile and execute the application.You will interact with it through the browser which automatically opened.
 4. Optionally, you can run "dotnet build" to compile this console app without running it.
-5. If you wish to test the logic, navigate to the Vendors.Tests directory in the termimal. Once there run the command "dotnet test" to run it.
+5. If you wish to test the logic, navigate to the PierresVendors.Tests directory in the termimal. Once there run the command "dotnet test" to run it.
 
 
 ## Known Bugs
